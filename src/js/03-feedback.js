@@ -30,9 +30,6 @@ function onFormSubmit(event) {
 function updateForm() {
   const savedData = localStorage.getItem(STORAGE_KEY);
   if (savedData) {
-    // const updateData = { email, message };
-    // updateData = JSON.parse(savedData);
-    // formData = updateData;
     const { email, message } = JSON.parse(savedData);
     form.email.value = email;
     form.message.value = message;
