@@ -8,7 +8,7 @@ const player = new Player(iframe);
 // сохранение времени воспроизведения
 
 const savedTime = localStorage.getItem(STORAGE_KEY);
-if (STORAGE_KEY) {
+if (savedTime) {
   player.setCurrentTime(savedTime);
 }
 // обновление времени воспроизведения.
